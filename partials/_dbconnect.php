@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "hg_forum";
+$database = "multithread";
 
 $conn = mysqli_connect($servername , $username , $password , $database);
 

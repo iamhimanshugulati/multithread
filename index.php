@@ -49,7 +49,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><a class="text-decoration-none text-dark" href="threadlist.php?catid=' . $id . '">' . $catename . '</a></h5>
                         <p class="card-text">' . $catedesc . '.....</p>
-                        <a href="threadlist.php?catid=' . $id . '" class="btn btn-primary">View Thread</a>
+                        <a href="threadlist.php?catid=' . $id . '" class="btn btn-dark">View Thread</a>
                     </div>
                 </div>
             </div>

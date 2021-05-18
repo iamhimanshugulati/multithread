@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST["password"];
         $password = str_replace("<", "&lt;", $password);
         $password = str_replace(">", "&gt;", $password);
-
+        // && `password` = '$password'
         $sql = "SELECT * FROM `userss` WHERE `email_id` = '$email_id'";
         $result = mysqli_query($conn, $sql);
         $numRows = mysqli_num_rows($result);
@@ -23,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $_SESSION['email_id'] = $email_id;
                         $_SESSION['sno'] = $row['sno'];
                         $_SESSION['full_name'] = $row['full_name'];
-                        // echo "logged in Welcome" . $_SESSION['full_name'] . " email id contact number";
 
+                        // header("location: " . $_SERVER["HTTP_REFERER"] . "");
                         header("location: /multithread/index.php?login=true");
+                
                 }
                 else {
                         header("location: /multithread/index.php?login=false&error=Password_do_not_match");
-                }
-                
+                }             
         }
         else {
                 header("location: /multithread/index.php?login=false&error=Email_address_not_registered_with_us");
-        }
+        }        
 }
 
 

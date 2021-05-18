@@ -53,15 +53,15 @@ echo '
       <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, 
       ' . $_SESSION['full_name'] . ' !!
       </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <div class="dropdown-menu " aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="/multithread/profile.php">Profile</a>
-      <a class="dropdown-item" href="/multithread/to-do-list.php">Notes Application</a>
+      <a class="dropdown-item" href="/multithread/to-do-list.php">Notes App</a>
       <a class="dropdown-item" href="/multithread/chat-room.php">Chat Room</a>
       <a class="dropdown-item" href="/multithread/partials/_logout.php">Logout</a>
       </div>
       </div>
 
-      </div>
+      </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       </nav>';
     }
 
